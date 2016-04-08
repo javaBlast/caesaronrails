@@ -25,6 +25,10 @@ class CryptsController < ApplicationController
   def edit
   end
 
+
+
+
+
   # POST /crypts
   # POST /crypts.json
   def create
@@ -71,7 +75,7 @@ class CryptsController < ApplicationController
       @crypt = Crypt.find(params[:id])
       @char_count = Hash.new
       ('a'..'z').to_a.each do |crypt|
-        @char_count[crypt.upcase] = Caesar.new(@crypt.shift).decrypt(@crypt.decrypt).count(crypt)
+        @char_count[crypt] = Caesar.new(@crypt.shift).encrypt(@crypt.decrypt).count(crypt)
       end
     end
 

@@ -10,10 +10,10 @@ class Caesar
   end
 
   def encrypt(string)
-    string.tr(@decrypt, @encrypt)
+    string.downcase.tr(@decrypt, @encrypt)
   end
 
   def decrypt(string)
-    string.tr(@encrypt, @decrypt)
+    string.downcase.tr(@encrypt, @decrypt)
   end
 end

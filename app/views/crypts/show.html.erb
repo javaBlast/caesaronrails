@@ -2,14 +2,14 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Расшифрованый текст:</strong>
+  <strong>Decrypting text:</strong>
   <%= @crypt.decrypt %>
   <%= Caesar.new(@crypt.shift).decrypt(@crypt.encrypt) %>
 
 </p>
 
 <p>
-  <strong>Зашифованый текст:</strong>
+  <strong>Encrypting text:</strong>
   <%= @crypt.encrypt %>
   <%= Caesar.new(@crypt.shift).encrypt(@crypt.decrypt) %>
 
@@ -21,8 +21,12 @@
 </p>
 
 
+<p>
+  <br>
+  <strong>Chars repeat chart:</strong>
+  <%= column_chart @char_count %>
 
-<%= column_chart @char_count %>
+</p>
 
 
 

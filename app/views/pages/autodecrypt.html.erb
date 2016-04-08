@@ -1,0 +1,42 @@
+<div class="table-responsive">
+  <form action="#" class="form-group" method="get" onsubmit="return false">
+    <table class="table col-sm-12">
+      <tbody>
+      <tr>
+        <td><label for="text">Text:</label></td>
+        <td><textarea class="form-control" id="text" >GUVF VF FBZR FNZCYR GRKG URER.</textarea></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input type="button" value="Break code" onclick="doBreak()" class="btn btn-primary"/></td>
+      </tr>
+      <tr>
+        <td>Shift:</td>
+        <td>
+          <div class="form-group">
+            <input type="text" class="form-control" value="0" readonly="readonly" id="shift" style="width: 10%"/>
+          </div>
+          <div class="form-group">
+            <input type="button" value="Up"  onclick="setShift(getShift()+1)" class="btn btn-primary"/>
+            <input type="button" value="Down" onclick="setShift(getShift()-1)" class="btn btn-primary"/>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>Best guesses:</td>
+        <td>
+          <table class="table table-striped">
+            <thead>
+            <tr>
+              <th>Shift</th>
+              <th colspan="2">Entropy per letter (bits) <span style="font-weight:normal">(lower is better)</span></th>
+            </tr>
+            </thead>
+            <tbody id="guesses"></tbody>
+          </table>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </form>
+</div>
