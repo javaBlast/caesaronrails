@@ -7,7 +7,6 @@
     <thead>
       <tr>
         <th>Decrypt</th>
-        <th>Encrypt</th>
         <th>Shift</th>
         <th colspan="3"></th>
       </tr>
@@ -16,7 +15,6 @@
       <% @crypts.each do |crypt| %>
         <tr>
           <td><%= crypt.decrypt %></td>
-          <td><%= crypt.encrypt %></td>
           <td><%= crypt.shift %></td>
           <td><%= link_to 'Show', crypt %></td>
           <td><%= link_to 'Edit', edit_crypt_path(crypt) %></td>

@@ -4,7 +4,7 @@ end
 
 class Caesar
   def initialize(shift, alphabet = ('a'..'z').to_a.join)
-    i = shift % alphabet.size #I like this
+    i = shift % alphabet.size
     @decrypt = alphabet
     @encrypt = alphabet[i..-1] + alphabet[0...i]
   end
@@ -14,6 +14,9 @@ class Caesar
   end
 
   def decrypt(string)
+    if string == nil
+      string = ' '
+    end
     string.downcase.tr(@encrypt, @decrypt)
   end
 end
