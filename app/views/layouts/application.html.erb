@@ -6,8 +6,9 @@
         <meta name="description" content="<%= content_for?(:description) ? yield(:description) : " My Application" %>">
 
         <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-        <script src="http://canvasjs.com/assets/script/canvasjs.min.js"></script>
-        <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+      <%= javascript_include_tag "https://www.google.com/jsapi", "chartkick" %>
+
+      <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
         <%= csrf_meta_tags %>
     </head>
     <body>
@@ -20,7 +21,7 @@
             <br>
         </header>
 
-          <img class="featurette-image img-circle img-responsive pull-right" src="https://lh6.ggpht.com/K6n2cPSoNWv4B9p1fe5yLUTRXsPnzaJGdrQ8_Mkpy8rlSeZ5zt1vzyglayk4n6gy_paZ=w300">
+
             <%= yield %>
         </div>
     </body>

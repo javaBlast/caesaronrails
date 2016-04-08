@@ -1,0 +1,31 @@
+<div class="row col-sm-12">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Расшифрованый текст:</strong>
+  <%= @crypt.decrypt %>
+  <%= Caesar.new(@crypt.shift).decrypt(@crypt.encrypt) %>
+
+</p>
+
+<p>
+  <strong>Зашифованый текст:</strong>
+  <%= @crypt.encrypt %>
+  <%= Caesar.new(@crypt.shift).encrypt(@crypt.decrypt) %>
+
+</p>
+
+<p>
+  <strong>Shift:</strong>
+  <%= @crypt.shift %>
+</p>
+
+
+
+<%= column_chart @char_count %>
+
+
+
+<%= link_to 'Edit', edit_crypt_path(@crypt) %> |
+<%= link_to 'Back', crypts_path %>
+</div>

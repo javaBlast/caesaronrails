@@ -23,6 +23,14 @@
   width: 100%;
 }
 
+.jumbotron.panel.panel-default.row{
+  height: 350px;
+}
+
+.jumbotron p{
+  font-size: 18px;
+}
+
 #about{
   height: 150px;
 }
@@ -71,7 +79,7 @@
  }
 
  .featurette-heading {
-     font-size: 30px;
+     font-size: 40px;
  }
 
  footer {

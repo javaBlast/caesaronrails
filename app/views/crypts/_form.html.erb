@@ -1,0 +1,17 @@
+  <div class="row class="form-control">
+    <%= simple_form_for(@crypt) do |f| %>
+      <%= f.error_notification %>
+      <div class="col-xs-4">
+          <%= f.input :decrypt, as: :text %>
+      </div>
+      <div class="col-xs-4">
+        <%= f.input :encrypt, as: :text %>
+      </div>
+      <div class="col-xs-4">
+        <%= f.input :shift %>
+      </div>
+      <div class="form-actions col-xs-12">
+        <%= f.button :submit %>
+      </div>
+    <% end %>
+  </div>
