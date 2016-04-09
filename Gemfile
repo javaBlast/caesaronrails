@@ -11,7 +11,6 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'chartkick', '~> 1.4', '>= 1.4.2'
-gem 'web-console', '~> 2.0'
 gem 'spring'
 gem 'bootstrap-sass'
 gem 'high_voltage'
@@ -22,6 +21,7 @@ group :development do
   gem 'quiet_assets'
   gem 'rails_layout'
   gem 'spring-commands-rspec'
+  gem 'web-console', '~> 2.0'
 end
 group :development, :test do
   gem 'factory_girl_rails'
