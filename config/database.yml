@@ -7,7 +7,7 @@
 default: &default
  adapter: postgresql
  url: postgres://najaorntvakskf:b6Kydw0ZFzCLaCzmq61XzM32kZ@ec2-54-163-254-231.compute-1.amazonaws.com:5432/d82tiqplcpufnj
- host: ec2-54-163-254-231.compute-1.amazonaws.com
+ host: localhost
  database: d82tiqplcpufnj
  user: najaorntvakskf
  password: b6Kydw0ZFzCLaCzmq61XzM32kZ
